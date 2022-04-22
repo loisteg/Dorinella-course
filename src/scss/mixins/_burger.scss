@@ -1,10 +1,6 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 30px;
-  --burger-line-height: 2px;
-
   position: relative;
   border: none;
   padding: 0;
@@ -16,12 +12,13 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     width: 100%;
     height: var(--burger-line-height);
     background-color: currentColor;
+    border-radius: var(--burger-line-radius);
     transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
   }
 
@@ -42,6 +39,7 @@
     background-color: currentColor;
     transform: translateY(-50%);
     transition: transform 0.3s ease-in-out;
+    border-radius: var(--burger-line-radius);
   }
 
   &--active {
