@@ -1,0 +1,162 @@
+.unique {
+  padding: 50px 0 90px 0;
+  position: relative;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 37px rgba(147, 125, 209, 0.19);
+  border-radius: 30px;
+
+  &-bulb {
+    width: 257px;
+    height: 257px;
+    position: absolute;
+    left: 77px;
+    top: -120px;
+    z-index: 10;
+  }
+
+  &-container {
+    overflow: hidden;
+  }
+
+  &-divider {
+    margin: 10px 0 0 28%;
+  }
+}
+
+.information {
+  &-wrapper {
+    margin-top: 70px;
+
+    display: grid;
+    grid-template: auto auto / repeat(3, 1fr);
+    gap: 80px 75px;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  &__img {
+    height: 154px;
+    width: 154px;
+  }
+
+  &__title {
+    margin-top: 25px;
+
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__descr {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+}
+
+.purple-box {
+  background-color: #937dd1;
+  border-radius: 15px;
+
+  width: 340px;
+  height: 292px;
+  padding: 51px 57px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  &__descr {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1240px) {
+  .unique {
+    &-bulb {
+      left: 0px;
+    }
+  }
+}
+
+@include tablet {
+  .unique {
+    &-bulb {
+      top: -90px;
+      width: 190px;
+      height: 190px;
+    }
+  }
+  .information {
+    &-wrapper {
+      grid-template: auto auto / 1fr 1fr;
+    }
+  }
+}
+
+@include small-tablet {
+  .unique {
+    &-bulb {
+      top: -55px;
+      left: -5px;
+      width: 124px;
+      height: 124px;
+    }
+    &-divider {
+      margin: 10px 0 0 6%;
+    }
+  }
+
+  .information {
+    &-wrapper {
+      margin-top: 40px;
+      grid-template-columns: 100%;
+      place-items: center;
+    }
+    &-card {
+      align-items: center;
+    }
+    &__img {
+      width: 129px;
+      height: 129px;
+    }
+    &__title {
+      font-size: 18px;
+    }
+    &__descr {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .purple-box {
+    height: 124px;
+    width: 320px;
+    padding: 20px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    &__img {
+      width: 34px;
+      height: 34px;
+      order: 2;
+    }
+    &__descr {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
