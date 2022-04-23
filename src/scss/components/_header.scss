@@ -23,14 +23,14 @@
   border-radius: 18px;
   width: 111px;
   height: 111px;
-  background-image: url('../../img/site-logo.png');
+  background-image: url("../../img/site-logo.png");
   background-size: 52px 85px;
   background-color: #fff;
   filter: drop-shadow(0 0 29px rgb(0 0 0 / 10%));
 }
 
 .header__menu-nav {
-  margin: 0 40px;
+  margin: 0 70px;
   width: 100%;
   max-width: 840px;
 }
@@ -63,11 +63,11 @@
 }
 
 .header__social-link--inst {
-  background-image: url('../../img/icon-inst.png');
+  background-image: url("../../img/icon-inst.png");
 }
 
 .header__social-link--tg {
-  background-image: url('../../img/icon-telegram.png');
+  background-image: url("../../img/icon-telegram.png");
 }
 
 .header__burger {
