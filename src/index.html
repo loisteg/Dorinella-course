@@ -3,14 +3,17 @@
 @include('partials/head.html')
 
 <body class="page__body">
-  <!-- @include('partials/header.html') -->
-  <main class="main">
-    <!-- @include('partials/hero.html') -->
-    @include('partials/unique.html')
-    @include('partials/about.html')
-  </main>
+  @include('partials/header.html')
+  <div class="site-container">
+    <main class="main">
+      @include('partials/hero.html')
+      @include('partials/unique.html')
+      @include('partials/about.html')
+      @include('partials/form.html')
+    </main>
+  </div>
 
-  <!-- @include('partials/footer.html') -->
+  @include('partials/footer.html')
 </body>
 
 </html>

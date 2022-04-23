@@ -46,25 +46,25 @@ $browser-context: 16; // Default
 }
 
 @mixin mr($value) {
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-right: $value;
   }
 }
 
 @mixin ml($value) {
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-left: $value;
   }
 }
 
 @mixin mb($value) {
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-bottom: $value;
   }
 }
 
 @mixin mt($value) {
-  &:not(:last-child) {
+  &:not(:last-of-type) {
     margin-top: $value;
   }
 }
