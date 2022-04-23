@@ -1,6 +1,6 @@
 :root {
   // base
-  --font-family: 'Montserrat', sans-serif;
+  --font-family: "Montserrat", sans-serif;
   --content-width: 1060px;
   --container-offset: 30px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
@@ -8,4 +8,5 @@
   // colors
   --light-color: #fff;
   --dark-color: #000;
+  --purple: #937dd1;
 }

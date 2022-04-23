@@ -3,8 +3,11 @@
 @import 'mixins';
 @import 'fonts';
 @import 'settings';
+@import 'titles';
+@import 'divider';
 
 // подключения компонентов страницы
 @import './components/header';
 @import './components/hero';
+@import './components/unique';
 @import './components/form';
