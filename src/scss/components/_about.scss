@@ -2,8 +2,6 @@
   padding: 118px 0 32px 0;
   position: relative;
 
-  overflow: hidden;
-
   &-circle-purple {
     position: absolute;
     z-index: -1;
@@ -127,6 +125,7 @@
     }
 
     padding-top: 7px;
+    padding-bottom: 0px;
     &-wrapper {
       grid-template-columns: 1fr;
       place-items: center;
@@ -146,7 +145,7 @@
       font-size: 20px;
     }
     &-btn {
-      margin-top: 15px;
+      margin-top: 25px;
     }
   }
 }
@@ -162,7 +161,7 @@
     }
 
     &-information {
-      padding: 35px 29px;
+      padding: 35px 29px 30px;
       width: 300px;
       border-radius: 15px;
     }

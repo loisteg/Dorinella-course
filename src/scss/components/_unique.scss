@@ -110,6 +110,7 @@
 
 @include small-tablet {
   .unique {
+    padding-bottom: 20px;
     &-bulb {
       top: -55px;
       left: -5px;
