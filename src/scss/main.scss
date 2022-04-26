@@ -3,10 +3,12 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "animation";
 @import "titles";
 @import "divider";
 
 // подключения компонентов страницы
+@import "./components/info";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/unique";

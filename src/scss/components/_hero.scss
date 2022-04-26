@@ -98,6 +98,9 @@
 }
 
 @include mobile {
+  .hero {
+    padding-bottom: 80px;
+  }
   .hero__wrapper {
     padding-top: 105px;
   }

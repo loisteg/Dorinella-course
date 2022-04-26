@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 72px;
   z-index: 2;
   padding: 54px 0;
 }
@@ -16,6 +16,8 @@
 }
 
 .header__logo {
+  position: relative;
+  z-index: 1000;
   @include bg-cover;
 
   display: inline-block;
@@ -29,10 +31,18 @@
   filter: drop-shadow(0 0 29px rgb(0 0 0 / 10%));
 }
 
+.header__menu-nav-tablet {
+  display: none;
+}
+
 .header__menu-nav {
   margin: 0 70px;
   width: 100%;
   max-width: 840px;
+}
+
+.header__menu-close {
+  display: none;
 }
 
 .header__menu-list {
@@ -92,6 +102,12 @@
     justify-content: flex-start;
   }
 
+  .header__menu-nav-tablet {
+    position: absolute;
+    z-index: 1000;
+    display: block;
+  }
+
   .header__menu-nav {
     display: none;
   }
@@ -108,6 +124,7 @@
 @include mobile {
   .header {
     padding: 25px 0;
+    top: 30px;
   }
 
   .header__logo {
