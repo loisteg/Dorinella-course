@@ -4,6 +4,29 @@ import "./_components";
 
 import $ from "jquery";
 
+// Cards
+function changeCard(item) {
+  $(item).each(function (i) {
+    $(this).on("click", function (e) {
+      e.preventDefault();
+      $(".program-info").eq(i).toggleClass("program-info_active");
+      $(".program-list").eq(i).toggleClass("program-list_active");
+    });
+  });
+}
+
+changeCard(".program-info__button");
+changeCard(".program-list__button");
+
+//Scroll
+
+$('a[href^="#"]').click(function () {
+  const _href = $(this).attr("href");
+  $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+  return false;
+});
+
+// POST
 $("#form").on("submit", function (e) {
   e.preventDefault();
 
