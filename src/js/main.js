@@ -22,8 +22,8 @@ changeCard(".program-list__button");
 $("#form").on("submit", function (e) {
   e.preventDefault();
 
-  const TOKEN = "";
-  const CHAT_ID = "";
+  const TOKEN = "5369957968:AAHrLt-fNVbjC9J3B_whNH4lcVopmemnl58";
+  const CHAT_ID = "-1001576354120";
   const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
   const success = document.querySelector(".success"),
