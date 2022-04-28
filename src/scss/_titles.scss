@@ -3,7 +3,28 @@
   font-size: 40px;
   line-height: 49px;
   text-align: center;
-  color: #000000;
+  color: #000;
+}
+
+.title--divider span {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    width: 100vw;
+    height: 2px;
+    background-color: #000;
+  }
+}
+
+.title--divider-right span::after {
+  left: 0;
+}
+
+.title--divider-left span::after {
+  right: 0;
 }
 
 @include tablet {
