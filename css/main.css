@@ -255,7 +255,6 @@ a {
   display: -ms-grid;
   display: grid;
   grid-template-areas: "logo burger" "menu menu" "social social";
-  -ms-grid-columns: (1fr) [2];
   grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: min-content 40px min-content 40px min-content;
   grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
@@ -1174,7 +1173,6 @@ a {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (100%) [2];
   grid-template-columns: repeat(2, 100%);
 }
 .program-card-top {
