@@ -1,0 +1,123 @@
+.charity {
+  min-height: 460px;
+  position: relative;
+
+  &-circle-blue {
+    position: absolute;
+    z-index: 2;
+    right: -100px;
+    bottom: -190px;
+    background: #72d0f2;
+    filter: blur(130px);
+    transform: rotate(-165deg);
+    border-radius: 100%;
+    width: 588px;
+    height: 588px;
+  }
+  &-wrapper {
+    padding: 45px 140px 60px 100px;
+    width: 1000px;
+    height: 444px;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #ffffff;
+    box-shadow: 0px 4px 26px rgba(147, 125, 209, 0.19);
+    border-radius: 30px;
+  }
+
+  &-title {
+    text-align: left;
+  }
+
+  &-information {
+    margin-top: 90px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #000000;
+    span {
+      font-weight: 700;
+      padding: 3px;
+      border-radius: 72px;
+      &:first-child {
+        background: rgba(223, 179, 202, 0.4);
+      }
+      &:nth-child(2n) {
+        background: rgba(122, 228, 255, 0.4);
+      }
+      &:last-child {
+        background: #cdb7ff;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .charity {
+    &-circle-blue {
+      right: -450px;
+    }
+  }
+}
+
+@include tablet {
+  .charity {
+    min-height: 420px;
+    &-circle-blue {
+      z-index: 0;
+      left: 0;
+      bottom: -40px;
+      width: 300px;
+      height: 300px;
+      filter: blur(76px);
+    }
+
+    &-wrapper {
+      width: 90%;
+      padding: 45px 50px 60px;
+    }
+  }
+}
+
+@include small-tablet {
+  .charity {
+    min-height: 250px;
+    &-circle-blue {
+      z-index: -1;
+      left: -280px;
+      bottom: 79px;
+      width: 458px;
+      height: 458px;
+      filter: blur(220px);
+    }
+    &-wrapper {
+      width: 100%;
+      height: auto;
+      padding: 25px 25px 0 25px;
+      position: static;
+      transform: translateX(0);
+      text-align: center;
+      background: rgba(0, 0, 0, 0);
+      box-shadow: none;
+    }
+    &-information {
+      margin-top: 27px;
+      padding: 0;
+
+      font-size: 16px;
+      line-height: 20px;
+      span {
+        padding: 0px;
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+    &-title {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+.unique {
+  position: relative;
+  border-radius: 30px;
+  padding: 50px 0 90px;
+  box-shadow: 0 4px 37px rgb(147 125 209 / 19%);
+  background: #fff;
+
+  &-bulb {
+    position: absolute;
+    left: 77px;
+    top: -120px;
+    z-index: 1;
+    width: 257px;
+    height: 257px;
+  }
+
+  &-divider {
+    margin: 10px 0 0 28%;
+  }
+}
+
+.information {
+  &-wrapper {
+    display: grid;
+    grid-template: auto auto / repeat(3, 1fr);
+    margin-top: 70px;
+    gap: 80px 75px;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+  }
+
+  &__img {
+    width: 154px;
+    height: 154px;
+  }
+
+  &__title {
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #000;
+  }
+
+  &__descr {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+  }
+}
+
+.purple-box {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 51px 57px;
+  width: 340px;
+  height: 292px;
+  background-color: #937dd1;
+
+  &__descr {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1240px) {
+  .unique {
+    &-bulb {
+      left: 0;
+    }
+  }
+}
+
+@include tablet {
+  .unique {
+    &-bulb {
+      top: -90px;
+      width: 190px;
+      height: 190px;
+    }
+  }
+
+  .information {
+    &-wrapper {
+      grid-template: auto auto / 1fr 1fr;
+    }
+  }
+}
+
+@include small-tablet {
+  .unique {
+    padding-bottom: 20px;
+
+    &-bulb {
+      left: -5px;
+      top: -55px;
+      width: 124px;
+      height: 124px;
+    }
+
+    &-divider {
+      margin: 10px 0 0 6%;
+    }
+  }
+
+  .information {
+    &-wrapper {
+      place-items: center;
+      grid-template-columns: 100%;
+      margin-top: 40px;
+      row-gap: 27px;
+    }
+
+    &-card {
+      align-items: center;
+    }
+
+    &__img {
+      width: 129px;
+      height: 129px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  .purple-box {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+    width: 320px;
+    height: 124px;
+
+    &__img {
+      order: 2;
+      width: 34px;
+      height: 34px;
+    }
+
+    &__descr {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
