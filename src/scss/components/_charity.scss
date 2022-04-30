@@ -113,15 +113,6 @@
       span {
         font-size: 16px;
         line-height: 20px;
-        &:first-child {
-          background: #fff;
-        }
-        &:nth-child(2n) {
-          background-color: #fff;
-        }
-        &:last-child {
-          background: #cdb7ff;
-        }
       }
     }
     &-title {
